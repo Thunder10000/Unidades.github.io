@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversión de Unidades</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora: Conversión de Unidades</h1>
+
+        <div class="converters">
+            <div class="converter">
+                <h2>Longitud</h2>
+                <input type="number" id="input-longitud" placeholder="Valor">
+                <select id="from-longitud">
+                    <option value="kilometro">Kilómetro</option>
+                    <option value="metro">Metro</option>
+                    <option value="centimetro">Centímetro</option>
+                    <option value="milimetro">Milímetro</option>
+                    <option value="milla">Milla</option>
+                    <option value="yarda">Yarda</option>
+                    <option value="pie">Pie</option>
+                    <option value="pulgada">Pulgada</option>
+                </select>
+                <span>a</span>
+                <select id="to-longitud">
+                    <option value="kilometro">Kilómetro</option>
+                    <option value="metro">Metro</option>
+                    <option value="centimetro">Centímetro</option>
+                    <option value="milimetro">Milímetro</option>
+                    <option value="milla">Milla</option>
+                    <option value="yarda">Yarda</option>
+                    <option value="pie">Pie</option>
+                    <option value="pulgada">Pulgada</option>
+                </select>
+                <button onclick="convertirLongitud()">Convertir</button>
+                <input type="text" id="resultado-longitud" readonly>
+            </div>
+
+            <div class="converter">
+                <h2>Velocidad</h2>
+                <input type="number" id="input-velocidad" placeholder="Valor">
+                <select id="from-velocidad">
+                    <option value="mph">Millas por hora</option>
+                    <option value="mps">Millas por segundo</option>
+                    <option value="kph">Kilómetros por hora</option>
+                    <option value="kps">Kilómetros por segundo</option>
+                    <option value="nudo">Nudo</option>
+                    <option value="mps">Metros por segundo</option>
+                    <option value="mph">Metros por hora</option>
+                </select>
+                <span>a</span>
+                <select id="to-velocidad">
+                    <option value="mph">Millas por hora</option>
+                    <option value="mps">Millas por segundo</option>
+                    <option value="kph">Kilómetros por hora</option>
+                    <option value="kps">Kilómetros por segundo</option>
+                    <option value="nudo">Nudo</option>
+                    <option value="mps">Metros por segundo</option>
+                    <option value="mph">Metros por hora</option>
+                </select>
+                <button onclick="convertirVelocidad()">Convertir</button>
+                <input type="text" id="resultado-velocidad" readonly>
+            </div>
+
+            <div class="converter">
+                <h2>Masa</h2>
+                <input type="number" id="input-masa" placeholder="Valor">
+                <select id="from-masa">
+                    <option value="tonelada">Tonelada</option>
+                    <option value="kilogramo">Kilogramo</option>
+                    <option value="gramo">Gramo</option>
+                    <option value="miligramo">Milígramo</option>
+                    <option value="libra">Libra</option>
+                    <option value="onza">Onza</option>
+                </select>
+                <span>a</span>
+                <select id="to-masa">
+                    <option value="tonelada">Tonelada</option>
+                    <option value="kilogramo">Kilogramo</option>
+                    <option value="gramo">Gramo</option>
+                    <option value="miligramo">Milígramo</option>
+                    <option value="libra">Libra</option>
+                    <option value="onza">Onza</option>
+                </select>
+                <button onclick="convertirMasa()">Convertir</button>
+                <input type="text" id="resultado-masa" readonly>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
